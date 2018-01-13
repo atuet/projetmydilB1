@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  sam. 13 jan. 2018 à 17:33
+-- Généré le :  sam. 13 jan. 2018 à 17:38
 -- Version du serveur :  10.1.26-MariaDB
 -- Version de PHP :  7.1.9
 
@@ -172,7 +172,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"phpmyadmin\",\"table\":\"requete\"},{\"db\":\"phpmyadmin\",\"table\":\"utilisateur\"},{\"db\":\"phpmyadmin\",\"table\":\"produit\"}]');
+('root', '[{\"db\":\"phpmyadmin\",\"table\":\"utilisateur\"},{\"db\":\"phpmyadmin\",\"table\":\"requete\"},{\"db\":\"phpmyadmin\",\"table\":\"produit\"}]');
 
 -- --------------------------------------------------------
 
@@ -396,7 +396,9 @@ CREATE TABLE `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `classe`, `mail`, `type`, `password`) VALUES
-(1, 'Tuet', 'Alexandre', 'b1', 'alexandre.tuet@epsi.fr', 'admin', 'testmdp');
+(1, 'Tuet', 'Alexandre', 'b1', 'alexandre.tuet@epsi.fr', 'admin', 'testmdp'),
+(161, 'Zimmermann', 'Thomas', 'b1', 'thomas.zimmermann@epsi.fr', 'admin', 'thomas'),
+(162, 'Crost', 'Maxime', 'prof', 'maxime.crost@lyon-epsi.fr', 'admin', 'maxime');
 
 --
 -- Index pour les tables déchargées
@@ -596,7 +598,7 @@ ALTER TABLE `requete`
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
